@@ -1,0 +1,23 @@
+{
+    "clangd.path": "C:/msys64/clang64/bin/clangd.exe",
+    "clangd.arguments": [
+        "--background-index",
+        "--clang-tidy",
+        "--header-insertion=iwyu",
+        "--completion-style=detailed",
+        "--query-driver=C:/msys64/clang64/bin/clang.exe"
+    ],
+    "terminal.integrated.profiles.windows": {
+        "MSYS2 Clang64": {
+            "path": "C:\\msys64\\msys2_shell.cmd",
+            "args": [
+                "-defterm",
+                "-here",
+                "-no-start",
+                "-clang64"
+            ],
+            "overrideName": true
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "MSYS2 Clang64"
+}

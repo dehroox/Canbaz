@@ -1,1 +1,65 @@
+# Build directories
+obj/
+bin/
 build/
+
+# Compiled objects and executables
+*.o
+*.exe
+*.out
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+# Debug files
+*.dSYM/
+*.pdb
+
+# Clangd files
+compile_commands.json
+.clangd-index/
+
+# Editor files
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# IDE specific
+.ccls-cache/
+clangd/
+
+# Tags files
+tags
+TAGS
+cscope.*
+
+# Package files
+*.tar.gz
+*.zip
+*.7z
+
+# Coverage and testing
+coverage/
+*.gcda
+*.gcno
+*.gcov
+
+# Valgrind
+*.memcheck
+
+# Makefile generated files (if any)
+.depend
+*.d
+
+# Backup files
+*.bak
+*.backup

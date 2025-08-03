@@ -1,0 +1,55 @@
+CompileFlags:
+  Add: [
+    -Wall,
+    -Wextra,
+    -Wpedantic,
+    -Werror,
+    -Wconversion,
+    -Wsign-conversion,
+    -Wnull-dereference,
+    -Wdouble-promotion,
+    -Wformat=2,
+    -Wuninitialized,
+    -Wstrict-prototypes,
+    -Wold-style-definition,
+    -Wmissing-prototypes,
+    -Wmissing-declarations,
+    -Wmissing-variable-declarations,
+    -Wmissing-field-initializers,
+    -Wshadow,
+    -Wcast-qual,
+    -Wcast-align,
+    -Wbad-function-cast,
+    -Wwrite-strings,
+    -Wundef,
+    -Wundef-prefix=DEBUG_,
+    -Wunused-macros,
+    -Wdisabled-optimization,
+    -Wstack-protector,
+    -fstack-protector-strong,
+    -g,
+    -O2,
+    -Iinclude,
+    -I/mingw64/include,
+    -I/mingw64/lib/clang/*/include
+  ]
+  Remove: [
+    -fno-sized-deallocation
+  ]
+
+Diagnostics:
+  ClangTidy:
+    Add: [
+      bugprone-*,
+      performance-*,
+      readability-*,
+      modernize-*,
+    ]
+
+Index:
+  Background: Build
+
+Completion:
+  AllScopes: true
+Hover:
+  ShowAKA: true
